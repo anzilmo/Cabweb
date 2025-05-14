@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Mirhu Cabs | Car Hire, Car Rental, Outstation Taxi, Outstation Cabs, Bangalore</title>
+    <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Car Hire, Car Rental, Outstation Taxi, Outstation Cabs, Bangalore" name="description">
+    <!-- CSS Files
+    ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/mdb.min.css" rel="stylesheet" type="text/css" id="mdb">
+    <link href="css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/coloring.css" rel="stylesheet" type="text/css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locationiq-autocomplete@1.0.0/style.css" />
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
+</head>
+<body onload="initialize()">
+    <div id="wrapper">
+
+        <!-- page preloader begin -->
+        <div id="de-preloader"></div>
+        <!-- page preloader close -->
+
+        <!-- header begin -->
+        <header class="transparent scroll-light has-topbar">
+            <div id="topbar" class="topbar-dark text-light">
+                <div class="container">
+                    <div class="topbar-left xs-hide">
+                        <div class="topbar-widget">
+                            <div class="topbar-widget"><a href="#"><i class="fa fa-phone"
+                                        style="color: #1c90e2;"></i>+91 7022228122</a></div>
+                            <div class="topbar-widget"><a href="#"><i class="fa fa-envelope"
+                                        style="color: #1c90e2;"></i>info@mirhucabs.com</a></div>
+                            <div class="topbar-widget"><a href="#"><i class="fa fa-clock-o"
+                                        style="color: #1c90e2;"></i>Mon - Fri 08.00 -18.00</a></div>
+                        </div>
+                    </div>
+
+                    <div class="topbar-right">
+                        <div class="social-icons">
+                            <a href="#"><i class="fa fa-facebook fa-lg" style="color: #1c90e2;"></i></a>
+                            <a href="#"><i class="fa fa-twitter fa-lg" style="color:#1c90e2;"></i></a>
+                            <a href="#"><i class="fa fa-youtube fa-lg" style="color: hsl(205, 78%, 50%);"></i></a>
+                            <a href="#"><i class="fa fa-pinterest fa-lg" style="color: #1c90e2;;"></i></a>
+                            <a href="#"><i class="fa fa-instagram fa-lg" style="color: #1c90e2;;"></i></a>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <div class="de-flex-col">
+                                    <!-- logo begin -->
+                                    <div id="logo">
+                                        <a href="index-2.html">
+                                            <img class="logo-1" src="images/neworg.png" alt="">
+                                            <img class="logo-2" src="images/logo black.png" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- logo close -->
+                                </div>
+                            </div>
+                            <div class="de-flex-col header-col-mid">
+                                <ul id="mainmenu">
+                                    <li><a class="menu-item" href="/">Home</a>
+                                    </li>
+                                    <li><a class="menu-item" href="/about-us/">About us</a>
+                                    </li>
+                                    <li><a class="menu-item" href="/our-cars/">Our Cars</a>
+                                    </li>
+                                    <li><a class="menu-item" href="/online-booking/">Online Booking</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="de-flex-col">
+                                <div class="menu_side_area">
+                                    <a href="/contact-us/" class="btn-main">Contact Now</a>
+                                    <span id="menu-btn"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+        <!-- content begin -->
+        <div class="no-bottom no-top" id="content">
+            <div id="top"></div>
+            <section id="section-hero" aria-label="section" class="jarallax no-top no-bottom"
+                data-video-src="https://www.youtube.com/watch?v=5qbjKpxfD64">
+                <div class="overlay-bg no-top no-bottom">
+                    <div class="v-center">
+                        <div class="container position-relative z1000">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 text-light">
+                                    <div class="spacer-10"></div>
+
+                                    <h1 style="font-family: Lato; color: #ffffff;">
+                                        Journey in
+                                        <span class="id-text" style="color: #1c90e2;"> Comfort,</span>
+                                        Explore
+                                        <span class="id-text" style="color: #1c90e2;"> MIRHU CABS </span>
+                                        Without Limits
+                                    </h1>
+
+                                    <div class="spacer-10"></div>
+                                    <p class="lead" style="font-family: lato; font-size:smaller;">Embark on unforgettable adventures and
+                                        discover the world in
+                                        unparalleled comfort and style with our fleet of exceptionally comfortable cars.
+                                    </p>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="spacer-single sm-hide"></div>
+                                    <div class="p-4 rounded-3 shadow-soft text-light" data-bgcolor="rgba(0, 0, 0, .6)">
+
+
+                                        <form name="contactForm" id='contact_form' method="post">
+                                            <h5>What is your vehicle type?</h5>
+
+                                            <div class="de_form de_radio row g-3">
+                                                <div class="radio-img col-lg-3 col-sm-3 col-6">
+                                                    <input id="radio-1a" name="Car_Type" type="radio"
+                                                        value="Residential" checked="checked">
+                                                    <label for="radio-1a"><img src="images/select-form/sedan4.png"
+                                                            alt="">Sedan</label>
+                                                </div>
+
+
+                                                <div class="radio-img col-lg-3 col-sm-3 col-6">
+                                                    <input id="radio-1b" name="Car_Type" type="radio" value="Office">
+                                                    <label for="radio-1b"><img src="images/select-form/Suv.png"
+                                                            alt="">SUV</label>
+                                                </div>
+
+                                                <div class="radio-img col-lg-3 col-sm-3 col-6">
+                                                    <input id="radio-1c" name="Car_Type" type="radio"
+                                                        value="Commercial">
+                                                    <label for="radio-1c"><img src="images/car-single/tt.png"
+                                                            alt="">TT</label>
+                                                </div>
+
+                                                <div class="radio-img col-lg-3 col-sm-3 col-6">
+                                                    <input id="radio-1d" name="Car_Type" type="radio" value="Retail">
+                                                    <label for="radio-1d"><img src="images/select-form/minibus.png"
+                                                            alt="">Mini Bus</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="spacer-20"></div>
+                                            <div class="row">
+                                                <div class="row">
+                                                    <div class="col-lg-6 mb20">
+                                                        <h5>Pick Up Location</h5>
+                                                        <input type="text" name="PickupLocation" id="autocomplete"
+                                                            placeholder="Enter your pickup location" autocomplete="off"
+                                                            class="form-control" onfocus="geolocate()">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 mb20">
+                                                    <h5>Drop Off Location</h5>
+                                                    <input type="text" name="DropoffLocation" id="autocomplete2"
+                                                        placeholder="Enter your dropoff location" autocomplete="off"
+                                                        class="form-control" onfocus="geolocate('autocomplete2')">
+
+                                                    <div class="jls-address-preview jls-address-preview--hidden">
+                                                        <div class="jls-address-preview__header"></div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- <div class="col-lg-6 mb20">
+                                                    <h5>Drop Off Location</h5>
+                                                    <input type="text" name="DropoffLocation" onfocus="geolocate()"
+                                                        placeholder="Enter your dropoff location" id="autocomplete2"
+                                                        autocomplete="off" class="form-control">
+
+                                                    <div class="jls-address-preview jls-address-preview--hidden">
+                                                        <div class="jls-address-preview__header">
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+
+                                                <div class="col-lg-6 mb20">
+                                                    <h5>Pick Up Date & Time</h5>
+                                                    <div class="date-time-field">
+                                                        <input type="text" id="date-picker" name="Pick Up Date"
+                                                            value="">
+                                                        <select name="Pick Up Time" id="pickup-time">
+                                                            <option selected disabled value="Select time">Time</option>
+                                                            <option value="00:00">00:00</option>
+                                                            <option value="00:30">00:30</option>
+                                                            <option value="01:00">01:00</option>
+                                                            <option value="01:30">01:30</option>
+                                                            <option value="02:00">02:00</option>
+                                                            <option value="02:30">02:30</option>
+                                                            <option value="03:00">03:00</option>
+                                                            <option value="03:30">03:30</option>
+                                                            <option value="04:00">04:00</option>
+                                                            <option value="04:30">04:30</option>
+                                                            <option value="05:00">05:00</option>
+                                                            <option value="05:30">05:30</option>
+                                                            <option value="06:00">06:00</option>
+                                                            <option value="06:30">06:30</option>
+                                                            <option value="07:00">07:00</option>
+                                                            <option value="07:30">07:30</option>
+                                                            <option value="08:00">08:00</option>
+                                                            <option value="08:30">08:30</option>
+                                                            <option value="09:00">09:00</option>
+                                                            <option value="09:30">09:30</option>
+                                                            <option value="10:00">10:00</option>
+                                                            <option value="10:30">10:30</option>
+                                                            <option value="11:00">11:00</option>
+                                                            <option value="11:30">11:30</option>
+                                                            <option value="12:00">12:00</option>
+                                                            <option value="12:30">12:30</option>
+                                                            <option value="13:00">13:00</option>
+                                                            <option value="13:30">13:30</option>
+                                                            <option value="14:00">14:00</option>
+                                                            <option value="14:30">14:30</option>
+                                                            <option value="15:00">15:00</option>
+                                                            <option value="15:30">15:30</option>
+                                                            <option value="16:00">16:00</option>
+                                                            <option value="16:30">16:30</option>
+                                                            <option value="17:00">17:00</option>
+                                                            <option value="17:30">17:30</option>
+                                                            <option value="18:00">18:00</option>
+                                                            <option value="18:30">18:30</option>
+                                                            <option value="19:00">19:00</option>
+                                                            <option value="19:30">19:30</option>
+                                                            <option value="20:00">20:00</option>
+                                                            <option value="20:30">20:30</option>
+                                                            <option value="21:00">21:00</option>
+                                                            <option value="21:30">21:30</option>
+                                                            <option value="22:00">22:00</option>
+                                                            <option value="22:30">22:30</option>
+                                                            <option value="23:00">23:00</option>
+                                                            <option value="23:30">23:30</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-6 mb20">
+                                                    
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                    <input type='submit' id='send_message' value='Find a Vehicle'
+                                        class="btn-main pull-right" style="width: 100%; height: 60px;">
+
+                                    <div class="clearfix"></div>
+
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="position-absolute d-flex bottom-20">
+                        <div class="de-marquee-list d-marquee-small">
+                            <div class="d-item">
+                                <span class="d-item-txt" style="font-family: lato;">SUV</span>
+                                <span class="d-item-display">
+                                    <i class="d-item-dot"></i>
+                                </span>
+                                <span class="d-item-txt" style="font-family: lato;">Hatchback</span>
+                                <span class="d-item-display">
+                                    <i class="d-item-dot"></i>
+                                </span>
+                                <span class="d-item-txt" style="font-family: lato;">Sedan</span>
+                                <span class="d-item-display">
+                                    <i class="d-item-dot"></i>
+                                </span>
+                                <span class="d-item-txt" style="font-family: lato;">MiniBus</span>
+                                <span class="d-item-display">
+                                    <i class="d-item-dot"></i>
+                                </span>
+                                <span class="d-item-txt" style="font-family: lato;">SUV</span>
+                                <span class="d-item-display">
+                                    <i class="d-item-dot"></i>
+                                </span>
+                                <span class="d-item-txt" style="font-family: lato;">Hatchback</span>
+                                <span class="d-item-display">
+                                    <i class="d-item-dot"></i>
+                                </span>
+                                <span class="d-item-txt" style="font-family: lato;">Minibus</span>
+                                <span class="d-item-display">
+                                    <i class="d-item-dot"></i>
+                                </span>
+                                <span class="d-item-txt" style="font-family: lato;">Sedan</span>
+                                <span class="d-item-display">
+                                    <i class="d-item-dot"></i>
+                                </span>
+                                <span class="d-item-txt" style="font-family: lato;">SUV</span>
+                                <span class="d-item-display">
+                                    <i class="d-item-dot"></i>
+                                </span>
+                                <span class="d-item-txt" style="font-family: lato;">Minibus</span>
+                                <span class="d-item-display">
+                                    <i class="d-item-dot"></i>
+                                </span>
+                                <span class="d-item-txt" style="font-family: lato;">Hatchback</span>
+                                <span class="d-item-display">
+                                    <i class="d-item-dot"></i>
+                                </span>
+                                <span class="d-item-txt" style="font-family: loto;">Sedan</span>
+                                <span class="d-item-display">
+                                    <i class="d-item-dot"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-cars">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 offset-lg-3 text-center">
+                            <h2 style="font-family: Lato;  color: black;">Book Your Cab Now</h2>
+                            <p style="font-family: Lato;  color: black; font-size:medium;">Bring your travel dreams to life with our
+                                exquisite fleet of versatile vehicles, perfectfor unforgettable journeys.</p>
+                            <div class="spacer-20"></div>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <div id="items-carousel" class="owl-carousel wow fadeIn">
+
+                            <!-- Etios -->
+                            <div class="col-lg-12">
+                                <div class="de-item mb30">
+                                    <div class="d-img">
+                                        <img src="/images/gallery/etos sden.jpg " class="img-fluid" alt="">
+                                    </div>
+                                    <div class="d-info">
+                                        <div class="d-text">
+                                            <h4 style="font-family: lato; font-size:18px;">Toyota Etios</h4>
+                                            <div class="d-item_like">
+                                                <div class="main-price"
+                                                    style="font-size: 15px;color:black !important; font-family: lato">
+                                                    Rate from<span style="font-family: lato;">₹13/km</span></div>
+                                            </div>
+                                            <!-- /////////<button in online wp///////////// -->
+                                            <div class="second-buttn">
+                                                <!-- Trigger Button -->
+                                                <a class="btn-main btn-red" href="/online-booking/"
+                                                    style="background-color: rgb(236, 26, 26); cursor: pointer;">
+                                                    Online Booking
+                                                </a>
+                                                <a class="btn-main btn-green"
+                                                    style="background-color: rgb(10, 186, 10);"
+                                                    href="https://wa.me/917022228122" target="_blank">WhatsApp</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!--////////////// Suzuki Ertiga//////////////////// -->
+
+                            <div class="col-lg-12">
+                                <div class="de-item mb30">
+                                    <div class="d-img">
+                                        <img src="images/gallery/ertig.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="d-info">
+                                        <div class="d-text">
+                                            <h4 style="font-family: lato; font-size:18px;">Suzuki Ertiga</h4>
+                                            <div class="d-item_like">
+                                                <div class="main-price"
+                                                    style="font-size: 15px;color:black !important; font-family: lato">
+                                                    Rate from<span style="font-family: lato;">₹17/km</span></div>
+                                            </div>
+                                            <!-- /////////<button in online wp///////////// -->
+                                            <div class="second-buttn">
+                                                <!-- Trigger Button -->
+                                                <a class="btn-main btn-red" href="/online-booking/"
+                                                    style="background-color: rgb(236, 26, 26); cursor: pointer;">
+                                                    Online Booking
+                                                </a>
+                                                <a class="btn-main btn-green"
+                                                    style="background-color: rgb(10, 186, 10);"
+                                                    href="https://wa.me/917022228122" target="_blank">WhatsApp</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ///////////////////////Innova Crysta/////////////////// -->
+
+                            <div class="col-lg-12">
+                                <div class="de-item mb30">
+                                    <div class="d-img">
+                                        <img src="images/gallery/innv-cry2.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="d-info">
+                                        <div class="d-text">
+                                            <h4 style="font-family: lato; font-size:18px;">Innova crysta</h4>
+                                            <div class="d-item_like">
+                                                <div class="main-price"
+                                                    style="font-size: 15px;color:black !important; font-family: lato">
+                                                    Rate from<span style="font-family: lato;">₹20/km</span></div>
+                                            </div>
+                                            <!-- /////////<button in online wp///////////// -->
+                                            <div class="second-buttn">
+                                                <!-- Trigger Button -->
+                                                <a class="btn-main btn-red" href="/online-booking/"
+                                                    style="background-color: rgb(236, 26, 26); cursor: pointer;">
+                                                    Online Booking
+                                                </a>
+                                                <a class="btn-main btn-green"
+                                                    style="background-color: rgb(10, 186, 10);"
+                                                    href="https://wa.me/917022228122" target="_blank">WhatsApp</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- //////////////////////Innova Hycrodss///////////////////////////// -->
+
+                            <div class="col-lg-12">
+                                <div class="de-item mb30">
+                                    <div class="d-img">
+                                        <img src="images/gallery/hysro2.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="d-info">
+                                        <div class="d-text">
+                                            <h4 style="font-family: lato; font-size:18px;">Innova hycross</h4>
+                                            <div class="d-item_like">
+                                                <div class="main-price"
+                                                    style="font-size: 15px;color:black !important; font-family: lato">
+                                                    Rate from<span style="font-family: lato;">₹22/km</span></div>
+                                            </div>
+                                            <!-- /////////<button in online wp///////////// -->
+                                            <div class="second-buttn">
+                                                <!-- Trigger Button -->
+                                                <a class="btn-main btn-red" href="/online-booking/"
+                                                    style="background-color: rgb(236, 26, 26); cursor: pointer;">
+                                                    Online Booking
+                                                </a>
+                                                <a class="btn-main btn-green"
+                                                    style="background-color: rgb(10, 186, 10);"
+                                                    href="https://wa.me/917022228122" target="_blank">WhatsApp</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ////////////////////// end Toyota Etios//////////////////////////// -->
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section aria-label="section">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 offset-lg-4 text-center" style="color: black;">
+                            <h2 style="font-family: Lato;  color: black;">Our Features</h2>
+                            <p style="font-family: lato; font-size:medium">Discover a world of convenience, safety, and customization, paving the
+                                way for
+                                unforgettable adventures and seamless mobility solutions.</p>
+                            <div class="spacer-20"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-lg-3">
+                            <div class="box-icon s2 p-small mb20 wow fadeInRight" data-wow-delay=".5s">
+                                <i class="fa bg-color fa-trophy" style="background-color: #1c90e2;"></i>
+                                <div class="d-inner">
+                                    <h4 style=" font-family: Lato;color: rgb(221, 15, 15);">First class services</h4>
+                                    <samp style=" font-family: Lato;color: black;">luxury meets exceptional care,
+                                        creating unforgettable
+                                        moments and exceeding
+                                        your every expectation.</samp>
+                                </div>
+                            </div>
+                            <div class="box-icon s2 p-small mb20 wow fadeInL fadeInRight" data-wow-delay=".75s">
+                                <i class="fa bg-color fa-road" style="background-color: #1c90e2;"></i>
+                                <div class="d-inner">
+                                    <h4 style="font-family: Lato; color: rgb(234, 14, 14);">24/7 road assistance</h4>
+                                    <samp style="font-family: Lato; color: black;">support when you need it most,
+                                        keeping you on the move
+                                        with confidence and
+                                        peace of mind.</samp>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <img src="images/misc/car-2.png" alt="" class="img-fluid wow fadeInUp">
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="box-icon s2 d-invert p-small mb20 wow fadeInL fadeInLeft" data-wow-delay="1s">
+                                <i class="fa bg-color fa-tag" style="background-color: #1c90e2;"></i>
+                                <div class="d-inner">
+                                    <h4 style="font-family: Lato; color: rgb(215, 12, 12);">Quality at Minimum Expense
+                                    </h4>
+                                    <samp style="font-family: Lato;  color: black;"> Unlocking affordable brilliance
+                                        with elevating quality
+                                        while minimizing costs for
+                                        maximum value.</samp>
+                                </div>
+                            </div>
+                            <div class="box-icon s2 d-invert p-small mb20 wow fadeInL fadeInLeft"
+                                data-wow-delay="1.25s">
+                                <i class="fa bg-color fa-map-pin" style="background-color: #1c90e2;"></i>
+                                <div class="d-inner">
+                                    <h4 style="font-family: Lato;  color: rgb(236, 12, 12);">Free Pick-Up & Drop-Off
+                                    </h4>
+                                    <samp style=" font-family: Lato; color: black;">Enjoy free pickup and drop-off
+                                        services, adding an extra
+                                        layer of ease to your car
+                                        rental experience.</samp>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-img-with-tab" class="text-light" style="background-color: #c2e1f7;">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 offset-lg-7">
+
+                            <h2 style="font-family: LATO; color: black; font-size:28px ">Delivering Only the Best, Every
+                                Time.</h2>
+                            <div class="spacer-20"></div>
+
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-home" type="button" style="background-color: #1c90e2;"
+                                        role="tab" aria-controls="pills-home" aria-selected="true">Outstation
+                                        Taxi</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile" type="button" style="background-color: #1c90e2;"
+                                        role="tab" aria-controls="pills-profile" aria-selected="false">Airport
+                                        Taxi</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-contact" type="button" style="background-color: #1c90e2;"
+                                        role="tab" aria-controls="pills-contact" aria-selected="false">Local
+                                        Taxi</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">
+                                    <p style="color: black;  font-family: Inconsolata; font-size: 17px;">
+                                        Sedan ₹14/km (Min 300 KM) – Etios, Ciaz, Dzire, Verito.
+                                        Prompt, comfortable rides for your airport and long-distance travel.
+                                        Reliable drivers and clean vehicles, delivering only the best every time.
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab">
+                                    <p style="color: black;  font-family: Inconsolata; font-size: 17px;">
+                                        Airport Taxi –Toll extra, ₹120 additional for airport pickup On-time,
+                                        hassle-free pickups and drop-offs, day or night.
+                                        Ride in comfort with trusted drivers and well-maintained vehicles.</p>
+                                </div>
+                                <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                    aria-labelledby="pills-contact-tab">
+                                    <p style="color: black;  font-family: Inconsolata; font-size: 17px;">
+                                        Local Taxi – Quick, convenient rides around town whenever you need them.
+                                        Safe, affordable, and always just a call away.
+                                        From quality to service, we're committed to delivering only the best.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-container col-md-6 pull-right"
+                    data-bgimage="url(images/background/poster2.jpg) center">
+                </div>
+            </section>
+
+            <section id="section-news">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 offset-lg-3 text-center">
+                            <h2 style="font-family: Lato;  color: black;">Latest News</h2>
+                            <p style="color: black; font-family:lato; font-size:medium;">Stay informed with breaking headlines, fresh insights, and detailed
+                                analysis. Get the
+                                latest updates that keep you ahead of the curve—locally and beyond.</p>
+                            <div class="spacer-20"></div>
+                        </div>
+
+                        <div class="col-lg-4 mb10">
+                            <div class="bloglist s2 item">
+                                <div class="post-content">
+                                    <div class="post-image">
+                                        <!-- <div class="date-box">
+                                            <div class="m"></div>
+                                            <div class="d"></div>
+                                        </div> -->
+                                        <img alt="" src="images/cars/innova crysta30.jpg" class="lazy">
+                                    </div>
+                                    <div class="post-text">
+                                        <h4 style="font-family: lato;"><a href="#" style="color: #1c90e2;">Enjoy Best
+                                                Travel
+                                                Experience<span></span></a>
+                                        </h4>
+                                        <p style="font-family: lato; color: black; font-size:smaller">
+                                            Explore the transformation of the car rental experience through cutting-edge
+                                            technology and customer-first innovations. vehicle options, the
+                                            next era of mobility is smarter, quicker, and more convenient than ever.</p>
+                                        <a class="btn-main" style="background-color: #1c90e2;"
+                                            href="https://mirhucabs.com/about-us/">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb10">
+                            <div class="bloglist s2 item">
+                                <div class="post-content">
+                                    <div class="post-image">
+                                        <!-- <div class="date-box">
+                                            <div class="m"></div>
+                                            <div class="d"></div>
+                                        </div> -->
+                                        <img alt="" src="images/cars/innova crysta 70.jpg" class="lazy">
+                                    </div>
+                                    <div class="post-text">
+                                        <h4 style="font-family: lato; color: black;"><a href="#"
+                                                style="color: #1c90e2;">The
+                                                Future of Car
+                                                Rent<span></span></a>
+                                        </h4>
+                                        <p style="font-family: lato; color: black;font-size:smaller;">Discover how technology and
+                                            customer-focused
+                                            innovation are reshaping the car
+                                            rental industry. From app-based bookings to eco-friendly fleets, the future
+                                            promises smarter, faster, and more flexible mobility solutions for all.</p>
+                                        <a class="btn-main" style="background-color: #1c90e2;"
+                                            href="https://mirhucabs.com/about-us/">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb10">
+                            <div class="bloglist s2 item">
+                                <div class="post-content">
+                                    <div class="post-image">
+                                        <!-- <div class="date-box">
+                                            <div class="m"></div>
+                                            <div class="d"></div>
+                                        </div> -->
+                                        <img alt="" src="images/cars/innova crysta80.jpg" class="lazy">
+                                    </div>
+                                    <div class="post-text">
+                                        <h4 style="font-family: lato; color: black;"><a href="#"
+                                                style="color: #1c90e2;">Holiday Tips For
+                                                Backpacker<span></span></a></h4>
+                                        <p style="font-family: lato; color: black; font-size:smaller">
+                                            Make the most of your adventures with practical travel advice, packing hacks,
+                                            and destination insights. Whether you're exploring cities or trekking
+                                            through nature, these tips stay light, safe, and fully for the journey
+                                            ahead.</p>
+                                        <a class="btn-main" style="background-color: #1c90e2;"
+                                            href="https://mirhucabs.com/about-us/">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-testimonials" class="no-top no-bottom">
+                <div class="container-fluid">
+                    <div class="row g-2 p-2 align-items-center">
+
+                        <div class="col-md-4">
+                            <div class="de-image-text" style="height: 550px;">
+                                <div class="d-text">
+                                    <div class="d-quote id-color"><i class="fa fa-quote-right" style="color: #fff;"></i>
+                                    </div>
+                                    <h4 style="font-family: lato; color: #ffffff;">Excellent Service! Car Rent
+                                        Service!</h4>
+                                    <blockquote style="font-family: lato;">
+                                        I have been using Rentaly for my Car Rental needs for over 5 years now. I have
+                                        never had any problems with their service. Their customer support is always
+                                        responsive and helpful.
+                                        <span class="by" style="font-family: lato;">Jhonns Philip</span>
+                                    </blockquote>
+                                </div>
+                                <img src="images/news/04.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <div class="de-image-text" style="height: 550px;">
+                                <div class="d-text">
+                                    <div class="d-quote id-color"><i class="fa fa-quote-right"
+                                            style="color: #ffffff;"></i>
+                                    </div>
+                                    <h4 style="font-family: lato; color: #ffffff;">Where Every Journey is Safe for
+                                        Women.</h4>
+                                    <blockquote style="font-family: lato;">
+                                        Rentaly provides reliable, well-maintained vehicles with excellent customer
+                                        support and a strong focus on women’s safety. A trusted choice for all our
+                                        travel needs.
+                                        <span class="by" style="font-family: lato;">Sandeepa Dhar</span>
+                                    </blockquote>
+                                </div>
+                                <img src="images/news/06.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="de-image-text" style="height: 550px;">
+                                <div class="d-text">
+                                    <div class="d-quote id-color"><i class="fa fa-quote-right"
+                                            style="color: #ffffff;"></i>
+                                    </div>
+                                    <h4 style=" font-family: lato;color: #ffffff;">Top Quality Cars. Premium Service.
+                                    </h4>
+                                    <blockquote style="font-family: lato;">
+                                        Endorsed by industry experts, Rentaly is the Car Rental solution you can trust.
+                                        With years of experience in the field, we provide fast, reliable and secure Car
+                                        Rental services.
+                                        <span class="by" style="font-family: lato;">Rahul Vp</span>
+                                    </blockquote>
+                                </div>
+                                <img src="images/news/07.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="section-faq">
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-center">
+                            <!-- <h2  style= "font-family: lato color: black;">Have Any Questions?</h2> -->
+                            <h2 style="font-family: Lato; color: black;">Have Any Questions?</h2>
+                            <div class="spacer-20"></div>
+                        </div>
+                    </div>
+                    <div class="row g-custom-x">
+                        <div class="col-md-6 wow fadeInUp">
+                            <div class="accordion secondary">
+                                <div class="accordion-section">
+                                    <div class="accordion-section-title" data-tab="#accordion-1">
+                                        How to Book Your Ride ?
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-1">
+                                        <p style="font-family: lato; font-size:smaller;">
+                                            Getting started is simple! Just choose your preferred car from our fleet,
+                                            select your rental dates, and complete a quick booking form online or at our
+                                            office. Make sure to bring a valid driver's license and ID when picking up
+                                            your vehicle. Our team will guide you through the rest, making your rental
+                                            experience smooth, quick, and hassle-free.</p>
+                                    </div>
+                                    <div class="accordion-section-title" data-tab="#accordion-2">
+                                        Debit Card Rentals: What to Expect
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-2">
+                                        <p style="font-size: smaller;">Renting a car with a debit card is possible, but there are some key points to
+                                            keep in mind. Many car rental agencies accept debit cards, but they may
+                                            require additional steps such as a credit check, proof of address, or an
+                                            extra deposit. It's important to check the specific requirements of the
+                                            rental agency before booking to ensure a smooth process.</p>
+                                    </div>
+                                    <div class="accordion-section-title" data-tab="#accordion-3">
+                                        Begin Your Journey with Us
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-3">
+                                        <p style="font-size: smaller;">Start your adventure with confidence by choosing from our wide range of
+                                            well-maintained, comfortable vehicles. Whether you're embarking on a
+                                            business trip, family vacation, or a spontaneous getaway, we make renting a
+                                            car simple and hassle-free. Enjoy flexible rental options, transparent
+                                            pricing, and a seamless booking experience designed to get you on the road
+                                            quickly.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 wow fadeInUp">
+                            <div class="accordion secondary">
+                                <div class="accordion-section">
+                                    <div class="accordion-section-title" data-tab="#accordion-b-4">
+                                        What is a Rental Car Security Deposit?
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-b-4">
+                                        <p style="font-size: smaller;">A rental car security deposit is a refundable amount held by the rental
+                                            agency to cover potential damages, traffic violations, or additional charges
+                                            during the rental period. The deposit is typically blocked on your credit or
+                                            debit card and released upon returning the vehicle in good condition. The
+                                            exact amount may vary depending on the car type, rental agency, and
+                                            location.</p>
+                                    </div>
+                                    <div class="accordion-section-title" data-tab="#accordion-b-5">
+                                        Can I Cancel or Modify My Reservation?
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-b-5">
+                                        <p style="font-size: smaller;">Yes, you can cancel or modify your reservation, depending on the rental
+                                            agency’s policies. Many agencies offer flexible cancellation or modification
+                                            options, but there may be fees or time restrictions. We recommend checking
+                                            the terms and conditions or contacting us directly to ensure a smooth
+                                            process if you need to make any changes to your booking.</p>
+                                    </div>
+                                    <div class="accordion-section-title" data-tab="#accordion-b-6">
+                                        Is it Possible to Extend My Rental Period?
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-b-6">
+                                        <p style="font-size: smaller;">Yes, you can extend your rental period, subject to availability and rental
+                                            terms. We recommend contacting us as soon as possible to make arrangements
+                                            and ensure that the vehicle is available for the extended period. Additional
+                                            charges may apply, depending on the extension duration and vehicle
+                                            availability.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-call-to-action" class="bg-color-2 pt60 pb60 text-light">
+                <div class="container">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-lg-4 offset-lg-2">
+                                <span class="subtitle text-white" style=" color:black">Call us for further
+                                    information</span>
+                                <h2 class="s2" style="font-family: lato;">
+                                    You can count on Rentaly support 24/7.</h2>
+                            </div>
+
+                            <div class="col-lg-4 text-lg-center text-sm-center">
+                                <div class="phone-num-big">
+                                    <i class="fa fa-phone"></i>
+                                    <span class="pnb-text">
+                                        Call Us Now
+                                    </span>
+                                    <span class="pnb-num" style="font-family: lato;">
+                                        +91 702 2228 122
+                                    </span>
+                                </div>
+                                <!-- <a href="#" class="btn-main">Contact Us</a> -->
+                                <a href="tel:+917022228122">
+                                    <button class="glow-on-hover" type="button">Contact Us</button>
+                                </a>
+
+                                <!-- <button class="glow-on-hover" type="button">Contact Us</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <!-- content close -->
+        <a href="#" id="back-to-top"></a>
+        <!-- footer begin -->
+        <footer class="text-light">
+            <div class="container">
+                <div class="row g-custom-x">
+                    <div class="col-lg-3">
+                        <div class="widget">
+                            <h5 style="font-family: lato; color:#fff">About Rentaly</h5>
+                            <p><samp style="font-family: lato;font-size:small">At MIRHU CAB, we are committed to 
+                                redefining travel by ensuring exceptional comfort, safety, and reliability for every journey. </samp>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="widget">
+                            <h5 style="font-family: lato;">Contact Info</h5>
+                            <address class="s1">
+                                <span style="font-family: lato;"><i
+                                        class="id-color fa fa-map-marker fa-lg"></i> Bengaluru</span>
+                                <span style="font-family: lato;"><i class="id-color fa fa-phone fa-lg"></i> +91
+                                    7022228122</span>
+                                <span style="font-family: lato;"><i class="id-color fa fa-envelope-o fa-lg"></i><a
+                                        href="mailto:contact@example.com">info@mirhucabs.com</a></span>
+                                <!-- <span style="font-family: lato;"><i class="id-color fa fa-file-pdf-o fa-lg"></i><a
+                                        href="#">Download
+                                        Brochure</a></span> -->
+                            </address>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5 style="font-family: lato ;">Quick Links</h5>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="widget">
+                                    <ul style="padding: -10x;">
+                                        <li><a href="/about-us/index.html"
+                                                style="font-family: lato;">About</a></li>
+                                        <li><a href="/our-cars/index.html"
+                                                style="font-family: lato;">cars</a></li>
+                                        <li><a href="/online-booking/index.html" style="font-family: lato;">Booking</a></li>
+                                        <li><a href="/contact-us/index.html"
+                                                style="font-family: lato;">contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3" style="padding-right: 90px;">
+                        <div class="widget">
+                            <h5 style="font-family: lato;">Social Network</h5>
+                            <div class="social-icons">
+                                <a href="#"><i class="fa fa-facebook fa-lg" style="color: #1c90e2;"></i></a>
+                                <a href="#"><i class="fa fa-instagram fa-lg" style="color: #1c90e2;"></i></a>
+
+                                <!-- <a href="#"><i class="fa fa-twitter fa-lg"></i></a> -->
+                                <!-- <a href="#"><i class="fa fa-linkedin fa-lg" style="color: #1c90e2;"></i></a> -->
+                                <!-- <a href="#"><i class="fa fa-pinterest fa-lg" style="color: #1c90e2;"></i></a> -->
+                                <!-- <a href="#"><i class="fa fa-rss fa-lg"></i></a> -->
+                            </div>
+                            <p style="font-family: lato; font-size:small">Social networks that ensure updates, support, and seamless travel engagement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subfooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="de-flex">
+                                <div class="de-flex-col">
+                                    <a href="index-2.html">
+                                        Copyright 2025 - MIRHU CAB
+                                    </a>
+                                </div>
+                                <ul class="menu-simple">
+                                    <li><a href="#">Terms &amp; Conditions</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer close -->
+    </div>
+
+    <!-- Javascript Files
+    ================================================== -->
+
+
+    <script>
+        // This function is triggered when the input field is focused
+        function geolocate() {
+            if (navigator.geolocation) {
+                // Get the user's current location
+                navigator.geolocation.getCurrentPosition(success, error);
+            } else {
+                console.log('Geolocation is not supported by this browser.');
+            }
+        }
+
+        // Callback function for successful geolocation
+        function success(position) {
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+            const query = latitude + ',' + longitude;
+            const apiKey = 'ebd973b76fda4fa8b961633fef155720';  // OpenCage API Key
+            const apiUrl = `https://api.opencagedata.com/geocode/v1/json?key=${apiKey}&q=${encodeURIComponent(query)}&pretty=1&no_annotations=1`;
+
+            // Create a request to the OpenCage API
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.results && data.results.length > 0) {
+                        const address = data.results[0].formatted;
+                        // Set the input value to the formatted address
+                        document.getElementById('autocomplete').value = address;
+                    } else {
+                        console.log('No address found for this location.');
+                    }
+                })
+                .catch(error => {
+                    console.log('Error fetching location data: ', error);
+                });
+        }
+
+        // Callback function for geolocation error
+        function error(err) {
+            console.warn(`ERROR(${err.code}): ${err.message}`);
+        }
+    </script>
+    <script>
+        // This function is triggered when either input field is focused
+        function geolocate(inputId) {
+            if (navigator.geolocation) {
+                // Get the user's current location
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    success(position, inputId);
+                }, error);
+            } else {
+                console.log('Geolocation is not supported by this browser.');
+            }
+        }
+
+        // Callback function for successful geolocation
+        function success(position, inputId) {
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+            const query = latitude + ',' + longitude;
+            const apiKey = 'ebd973b76fda4fa8b961633fef155720';  // OpenCage API Key
+            const apiUrl = `https://api.opencagedata.com/geocode/v1/json?key=${apiKey}&q=${encodeURIComponent(query)}&pretty=1&no_annotations=1`;
+
+            // Request OpenCage API
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.results && data.results.length > 0) {
+                        const address = data.results[0].formatted;
+                        document.getElementById(inputId).value = address;  // Set input field value
+                    } else {
+                        console.log('No address found for this location.');
+                    }
+                })
+                .catch(error => {
+                    console.log('Error fetching location data: ', error);
+                });
+        }
+
+        // Callback function for geolocation error
+        function error(err) {
+            console.warn(`ERROR(${err.code}): ${err.message}`);
+        }
+    </script>
+    <script>
+        // Wait for the DOM to load
+        document.addEventListener('DOMContentLoaded', function () {
+            const openFormBtn = document.getElementById('btnOpenForm');
+            const closeFormBtn = document.getElementById('btnCloseForm');
+            const formPopup = document.getElementById('formPopup');
+
+            // Open the popup
+            openFormBtn.addEventListener('click', function (event) {
+                event.preventDefault();
+                formPopup.classList.add('is-visible');
+            });
+
+            // Close the popup when clicking the close button or outside the form
+            formPopup.addEventListener('click', function (event) {
+                if (event.target === formPopup || event.target === closeFormBtn) {
+                    event.preventDefault();
+                    formPopup.classList.remove('is-visible');
+                }
+            });
+        });
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function closeForm() {
+            $('.form-popup-bg').removeClass('is-visible');
+        }
+
+        $(document).ready(function () {
+            $('#btnOpenForm').on('click', function (e) {
+                e.preventDefault();
+                $('.form-popup-bg').addClass('is-visible');
+            });
+
+            $('#btnCloseForm, .form-popup-bg').on('click', function (e) {
+                if ($(e.target).is('.form-popup-bg') || $(e.target).is('#btnCloseForm')) {
+                    closeForm();
+                }
+            });
+        });
+    </script>
+    <script>
+        var customIcon = L.icon({
+            iconUrl: 'path/to/custom-icon.png',
+            iconSize: [32, 32], // Size of the icon
+            iconAnchor: [16, 32], // Anchor point of the icon
+        });
+
+        L.marker([51.505, -0.09], { icon: customIcon }).addTo(map)
+            .bindPopup("This is a custom marker.");
+
+    </script>
+    <script>
+        map.locate({ setView: true, maxZoom: 16 });
+        map.on('locationfound', function (e) {
+            L.marker(e.latlng).addTo(map)
+                .bindPopup("You are here!")
+                .openPopup();
+        });
+    </script>
+    <script>
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/designesia.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgiM7ogCAA2Y5pgSk2KXZfxF5S_1jsptA&amp;libraries=places&amp;callback=initPlaces"
+        async="" defer=""></script>
+</body>
+</html>
